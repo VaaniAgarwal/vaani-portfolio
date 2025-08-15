@@ -1,7 +1,15 @@
+import { motion } from "framer-motion";
+
 export default function Contact() {
   return (
-    <div className="h-screen flex justify-center items-center bg-gray-100 text-slate-950">
-      <h1 className="text-4xl font-bold">Contact Page</h1>
-    </div>
+    <motion.section
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className="h-screen flex flex-col justify-center px-4 md:px-0"
+    >
+      <h1 className="text-2xl font-semibold">Contact</h1>
+      <p className="mt-3 text-slate-300">Email/social links + form (later).</p>
+    </motion.section>
   );
 }
