@@ -24,10 +24,10 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" aria-label="GitHub" className="opacity-80 hover:opacity-100">
+          <a href="https://github.com/VaaniAgarwal" target="_blank" rel="noreferrer" aria-label="GitHub" className="opacity-80 hover:opacity-100">
             <FaGithub size={18} />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="opacity-80 hover:opacity-100">
+          <a href="https://www.linkedin.com/in/vaani-agarwal-7950a7204/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="opacity-80 hover:opacity-100">
             <FaLinkedin size={18} />
           </a>
         </div>

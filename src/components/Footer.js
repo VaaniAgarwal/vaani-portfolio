@@ -6,10 +6,10 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
         <p>© {new Date().getFullYear()} Vaani • Built with React & Tailwind</p>
         <div className="flex items-center gap-4 mt-2 md:mt-0">
-          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" className="opacity-80 hover:opacity-100">
+          <a href="https://github.com/VaaniAgarwal" target="_blank" rel="noreferrer" className="opacity-80 hover:opacity-100">
             <FaGithub size={18} />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer" className="opacity-80 hover:opacity-100">
+          <a href="https://www.linkedin.com/in/vaani-agarwal-7950a7204/" target="_blank" rel="noreferrer" className="opacity-80 hover:opacity-100">
             <FaLinkedin size={18} />
           </a>
         </div>
