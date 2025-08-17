@@ -44,7 +44,7 @@ export default function Home() {
           Hi, I’m Vaani 👋
         </h1>
         <p className="text-slate-300 max-w-xl mt-4 mx-auto text-lg md:text-xl drop-shadow-md">
-          MCA final-year • Aspiring Data Scientist. I turn data into insights & ideas into reality.
+          MCA final-year student • Passionate about learning, building projects, and turning ideas into reality.
         </p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
