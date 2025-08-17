@@ -3,10 +3,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <section className="min-h-screen flex flex-col justify-center px-4 md:px-0 text-center relative overflow-hidden">
-      {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-800 -z-10" />
-
-      {/* Floating circles */}
       <motion.div
         className="absolute w-72 h-72 bg-cyan-500/20 rounded-full top-[-5%] right-[-10%]"
         animate={{ x: [0, 40, 0], y: [0, 20, 0] }}
@@ -27,8 +24,6 @@ export default function About() {
         animate={{ x: [0, 10, 0], y: [0, -10, 0] }}
         transition={{ duration: 14, repeat: Infinity, repeatType: "mirror" }}
       />
-
-      {/* Content with subtle pop and background box */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
