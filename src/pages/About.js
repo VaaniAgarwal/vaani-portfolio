@@ -15,12 +15,12 @@ export default function About() {
         transition={{ duration: 10, repeat: Infinity, repeatType: "mirror" }}
       />
       <motion.div
-        className="absolute w-36 h-36 bg-purple-400/20 rounded-full bottom-[20%] right-[60%]"
+        className="absolute w-36 h-36 bg-purple-400/20 rounded-full top-[60%] right-[10%]"
         animate={{ x: [0, 20, 0], y: [0, 15, 0] }}
         transition={{ duration: 12, repeat: Infinity, repeatType: "mirror" }}
       />
       <motion.div
-        className="absolute w-28 h-28 bg-pink-400/20 rounded-full top-[60%] right-[10%]"
+        className="absolute w-28 h-28 bg-pink-400/20 rounded-full bottom-[20%] right-[60%]"
         animate={{ x: [0, 10, 0], y: [0, -10, 0] }}
         transition={{ duration: 14, repeat: Infinity, repeatType: "mirror" }}
       />
@@ -28,17 +28,19 @@ export default function About() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 text-center max-w-md mx-auto bg-white/5 backdrop-blur-md p-6 rounded-xl shadow-lg"
+        className="relative z-10 text-center max-w-md mx-auto"
       >
         <h1 className="text-4xl md:text-5xl font-semibold text-white drop-shadow-lg">
           About
         </h1>
+        <div className="mt-6 p-6 border border-white/20 rounded-xl backdrop-blur-sm bg-white/5 text-left">
         <p className="mt-4 text-slate-200 text-lg md:text-xl leading-relaxed">
           Hello! I’m Vaani Agarwal from Pukhrayan, U.P. I’m pursuing my MCA at VIT Vellore and love exploring programming, data, and software projects. I enjoy learning through hands-on work and building useful solutions.
         </p>
         <p className="mt-4 text-slate-200 text-lg md:text-xl leading-relaxed">
           Outside of academics, I like digital design, traveling, and reading novels. I also enjoy experimenting with Python, Java, SQL, WordPress, and VS Code to bring ideas to life.
         </p>
+        </div>
       </motion.div>
     </section>
   );
