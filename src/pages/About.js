@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-4 md:px-0 text-center relative overflow-hidden">
+    <section className="h-screen flex flex-col justify-center px-4 md:px-0 text-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-800 -z-10" />
       <motion.div
         className="absolute w-72 h-72 bg-cyan-500/20 rounded-full top-[-5%] right-[-10%]"
