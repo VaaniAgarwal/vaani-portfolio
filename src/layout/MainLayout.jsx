@@ -10,22 +10,24 @@ export default function MainLayout() {
         for (let i = 0; i < 12; i++) {
             arr.push({
                 left: Math.random() * 100,
-                animationDuration: 4 + Math.random() * 5,
-                animationDelay: Math.random() * 5,
+                top: -40 - Math.random() * 40,
+                animationDuration: 5 + Math.random() * 6,
+                animationDelay: Math.random() * 2,
             });
         }
         setPetals(arr);
     }, []);
     return (
-        <div className="relative min-h-screen overflow-hidden">
+        <div className="relative min-h-screen overflow-x-hidden">
             <Navbar />
-            <div className="absolute inset-0 overflow-hidden ">
+            <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
                 {petals.map((p, i) => (
                     <span
                         key={i}
-                        className="petal pointer-events-none"
+                        className="petal"
                         style={{
                             left: `${p.left}%`,
+                            top: `${p.top}px`,
                             animationDuration: `${p.animationDuration}s`,
                             animationDelay: `${p.animationDelay}s`,
                         }}
@@ -37,7 +39,7 @@ export default function MainLayout() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -30 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="relative z-10 pt-24 px-4 max-w-6xl mx-auto"
+                className="relative z-10 flex items-center justify-center min-h-[calc(100vh-80px)] px-4 max-w-6xl mx-auto"
             >
                 <Outlet />
             </motion.div>

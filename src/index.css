@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 html, body {
+  height: 100%;
+  margin: 0;
   background-color: #0B0A13;
   color: #FFF8F0;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background-image: radial-gradient(circle at 50% 20%, rgba(139,47,74,0.15), transparent 70%);
 }
 
 .glass-card {
@@ -39,10 +43,21 @@ html, body {
 
 .petal {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  background: rgba(199, 109, 133, 0.8);
+  width: 26px;
+  height: 26px;
+  background: radial-gradient(circle at 30% 30%, rgba(255,200,220,0.95), rgba(199,109,133,0.9));
   border-radius: 60% 40% 70% 30%;
-  animation: petalFall linear infinite;
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0);
+  animation: petalFall 7s linear infinite;
   filter: blur(0.6px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes petalFall {
+  0% { transform: translate3d(0, -20vh, 0) rotate(0deg); opacity: 1; }
+  15% { opacity: 0.95; }
+  80% { opacity: 0.9; }
+  100% { transform: translate3d(0, 120vh, 0) rotate(360deg); opacity: 0.5; }
 }

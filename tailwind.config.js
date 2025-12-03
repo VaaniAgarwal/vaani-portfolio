@@ -34,8 +34,10 @@ module.exports = {
       },
       keyframes: {
         petalFall: {
-          "0%": { transform: "translateY(-20vh) rotate(0deg)", opacity: 0 },
-          "100%": { transform: "translateY(120vh) rotate(360deg)", opacity: 0.9 },
+          "0%": { transform: "translate3d(0, -20vh, 0) rotate(0deg)", opacity: "1" },
+          "15%": { opacity: "0.9" },
+          "80%": { opacity: "0.8" },
+          "100%": { transform: "translate3d(0, 120vh, 0) rotate(360deg)", opacity: "0.5" },
         },
         shimmer: {
           "0%": {transform: 'translateX(-100%)'},
@@ -52,7 +54,7 @@ module.exports = {
         },
       },
       animation: {
-        petalFall: "petalFall 6s linear infinite",
+        petalFall: "petalFall 7s linear infinite",
         shimmer: "shimmer 2s linear infinite",
         float: "float 4s ease-in-out infinite",
         fadeGlow: "fadeGlow 3s ease-in-out infinite",
