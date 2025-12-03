@@ -38,7 +38,19 @@ html, body {
     rgba(244, 227, 178, 0.6), 
     transparent
   );
-  animation: shimmer 2.8s infinite;
+  animation: shimmer 2.4s infinite;
+}
+
+.drop-shadow-glowSoft {
+  filter: drop-shadow(0 0 18px rgba(212, 175, 55, 0.14));
+}
+
+.sparkle {
+  background: radial-gradient(circle at 30% 30%, rgba(255,230,180,0.95), rgba(212,175,55,0.6));
+}
+
+@media (max-width: 640px) {
+  .font-serif { font-size: 2.4rem; }
 }
 
 .petal {
@@ -60,4 +72,9 @@ html, body {
   15% { opacity: 0.95; }
   80% { opacity: 0.9; }
   100% { transform: translate3d(0, 120vh, 0) rotate(360deg); opacity: 0.5; }
+}
+
+@keyframes arcShine {
+  0% { stroke-dashoffset: 2000; }
+  100% { stroke-dashoffset: 0; }
 }
