@@ -57,7 +57,8 @@ export default function Navbar() {
             </div>
 
             {open && (
-                <div className="md:hidden bg-black/40 backdrop-blur-md px-6 py-4">
+                <div 
+                    className="mobile-menu cursor-wand md:hidden bg-black/40 backdrop-blur-md px-6 py-4">
                     <div className="flex flex-col gap-3">
                         {links.map((link) => (
                             <NavLink

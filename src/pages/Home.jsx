@@ -82,7 +82,7 @@ export default function Home() {
                             d="M60 80 C220 -20 580 -20 740 80"
                             fill="none"
                             stroke="url(#goldGrad)"
-                            strokeWidth="2.4"
+                            strokeWidth="1.6"
                             strokeLinecap="round"
                             style={{ 
                                 filter: "drop-shadow(0 6px 12px rgba(212,175,55,0.08))",
@@ -97,7 +97,7 @@ export default function Home() {
                             d="M60 80 C220 -20 580 -20 740 80"
                             fill="none"
                             stroke="#D4AF37"
-                            strokeWidth="16"
+                            strokeWidth="10"
                             strokeLinecap="round"
                             opacity="0.06"
                             filter="url(#softGlow)"
@@ -145,7 +145,7 @@ export default function Home() {
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.15, duration: 0.7 }}
-                    className="font-serif text-goldRoyal text-6xl md:text-7xl leading-tight drop-shadow-glowSoft"
+                    className="font-serif text-goldRoyal text-6xl md:text-7xl leading-tight drop-shadow-glowSoft hover-glow"
                 >
                     Vaani Agarwal
                 </motion.h1>
@@ -162,9 +162,10 @@ export default function Home() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.9, duration: 0.9 }}
-                        className="text-roseSoft text-lg md:text-base max-w-xl"
+                        className="text-roseSoft text-lg md:text-base max-w-xl leading-relaxed mt-3"
                     >   
-                        MCA’26 @ VIT Vellore • Aspiring Software Engineer
+                        MCA’26 @ VIT Vellore <br></br>
+                        Software Engineer in Making • Blending Logic with Aesthetics 
                     </motion.p>
 
                     <motion.a
@@ -175,7 +176,7 @@ export default function Home() {
                         className="inline-block px-6 py-3 rounded-2xl bg-roseDeep/20 text-creamLight font-medium backdrop-blur-md border border-roseSoft/30 shadow-glowRose hover:bg-roseDeep/40 hover:shadow-glowSoft transition-all duration-300"
                         aria-label="View my projects"
                     >
-                        View My Projects ✨
+                        View My Projects 
                     </motion.a>
                 </div>
             </motion.div>

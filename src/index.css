@@ -2,6 +2,19 @@
 @tailwind components; 
 @tailwind utilities;
 
+.cursor-wand, 
+.cursor-wand * {
+  cursor: url('/cursor-wand.png') 5 5, auto !important;
+}
+
+* {
+  cursor: url('/cursor-wand.png') 5 5, auto !important;
+}
+
+.mobile-menu * {
+  cursor: url('/cursor-wand.png') 5 5, auto !important;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -78,3 +91,9 @@ html, body {
   0% { stroke-dashoffset: 2000; }
   100% { stroke-dashoffset: 0; }
 }
+
+.hover-glow:hover {
+  text-shadow: 0 0 18px rgba(212, 175, 55, 0.35);
+  transition: 0.3s ease;
+}
+
